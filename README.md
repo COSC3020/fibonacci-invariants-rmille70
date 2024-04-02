@@ -35,7 +35,7 @@ A good invariant for this code would be the following:
 Invariant Reasoning: 
 The reason why this is a good invariant is because stands true at the the start of any recursive step, it implies the array contains the correct fibonacci values from arr[0] to arr[iter-1], and it guarantees the value to be places at arr[iter] will the corresponding fibonacci value for index iter.
 
-For n = 2, the number of elements is equal to 2 original + 0 previous recursive step + 1 being added at arr[2]
+For n = 2, the number of elements is equal to 2 original + 0 previous recursive step + 1 being added at arr[2],
 and arr[2] = (arr[0] = 0 (correct (n-1)th fibonacci value)) + (arr[1] = 1 (correct (n-2)th fibonacci value))
 
 For n = 3, the number of elements is equal to 2 original + 1 previous recursive step + 1 being added at arr[3],
